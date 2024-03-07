@@ -1,97 +1,163 @@
-# React E-commerce App 🛍️
+# ShopIT🛍️
 
-Welcome to my React E-commerce App project! This is a full-fledged online shopping experience with a dynamic product catalog, cart functionality, and more. 🚀
+A FullStack MERN E-commerce web application that offers a seamless shopping experience with features such as user authentication, product browsing, cart management, order processing, and payment integration. Leveraging modern web development practices using Redux-Toolkit, our application provides an intuitive user interface while ensuring robust backend functionality for secure data management. With a focus on scalability and maintainability, our project showcases the integration of frontend and backend technologies to deliver a comprehensive e-commerce solution.
 
-## Table of Contents 📚
+## Live Demo🗺️
+https://puce-alive-bream.cyclic.app/
 
-- Introduction
-- Features
-- Technologies Used
-- Project Setup
-- Usage
-- Video
-- Contributing
+#
 
-## Introduction 🌟
+Clone the project
 
-This React E-commerce App is a showcase of a fully functional online store with a user-friendly interface. It allows users to browse products, add them to the cart, edit product details, and manage their shopping experience seamlessly.
+```bash
+  git clone https://github.com/saquelain/shopit
+```
 
-## Features ✨
+Go to the project directory
 
-### Navbar:
+```bash
+  cd shopit
+```
+Install dependencies (Frontend)
+```bash
+  npm install
+```
 
-- Display cart items count dynamically.
-- Show relevant navigation links for easy navigation.
+Install dependencies (Frontend)
+```bash
+  cd frontend
+```
+```bash
+  npm install
+```
 
-### All Products Page:
+# Environment Variables🔑
 
-- Display a list of products from the API.
-- Edit product details inline with a pencil button.
-- Delete products with a confirmation alert.
-- Implement sorting by price with a cross button to remove the sort.
-- Add products to the cart with a user-friendly button.
+To run this project, you will need to add the following environment variables to your .env file
 
-### Create Page:
+PORT=
 
-- Add new products to the database with a confirmation alert.
+NODE_ENV=
 
-### Product Detail Page:
+FRONTEND_URL=
 
-- Show comprehensive details of a selected product.
-- Add the product to the cart with a button.
+DB_URI=
 
-### Cart Page:
+STRIPE_SECRET_KEY=
 
-- Display all items in the cart.
-- Remove item from cart
-- Decrease quantity
-- Increase quantity
-- Handle errors and success alerts for a smooth user experience.
+STRIPE_WEBHOOK_SECRET=
 
-### Error Handling:
+JWT_SECRET=
 
-- Efficiently handle errors from the API and display appropriate alerts.
+JWT_EXPIRES_TIME=
 
-### Redux Integration:
+COOKIE_EXPIRES_TIME=
 
-- Utilize Redux Toolkit for state management, ensuring a seamless flow of data.
+SMTP_HOST=
 
-### Firebase
+SMTP_PORT=
 
-- Utilizing firebase firestore to add and remove cart items.
+SMTP_EMAIL=
 
-## Technologies Used 🛠️
+SMTP_PASSWORD=
 
-- React
-- Redux
-- React Router
-- JSON Server for creating a dummy ecommerce API
-- Firebase Firestore
-- React Loader
-- React Toastify
+SMTP_FROM_EMAIL=
 
-## Project Setup 🚧
+SMTP_FROM_NAME=
 
-1. Clone the repository:
-   git clone https://github.com/saquelain/React-Ecommerce
+CLOUDINARY_CLOUD_NAME=
 
-2. Install dependencies:
-   cd E-COMMERCE REACT APP
-   npm install
+CLOUDINARY_API_KEY=
 
-3. Start the React app:
-   npm start
+CLOUDINARY_API_SECRET=
 
-4. Open http://localhost:3000 in your browser.
+#
 
-## Usage 🚀
+Start the server (Development Mode)⏯️
 
-Explore the products, edit them, add to the cart, and enjoy a seamless shopping experience! 🛒
+```bash
+  npm run dev
+```
+#
 
-## Video 📸
+Seed Database
 
-https://github.com/ParmodKumar28/E-Commerce-React-App/assets/91540271/40c043b5-7d8e-4f41-88a4-dc20620da6ca
+Use the following command to put some dummy products in that database. Run it in the root folder.
 
-## Contributing 🤝
+```bash
+  npm run seeder
+```
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the project:)
+#
+
+
+# Features
+## User Authentication and Authorization:🔐
+- Registration and login functionality.
+- Password reset and email verification.
+- Role-based access control for users and administrators.
+## User Profile Management:🤵
+- Ability for users to update their profile information.
+- Upload and manage user avatars.
+## Product Management:📦
+- CRUD operations for products (Create, Read, Update, Delete).
+- Image upload and management for product images.
+- Product reviews and ratings.
+## Order Management:📰
+- Creating new orders.
+- Viewing and managing user-specific orders.
+- Admin dashboard for managing all orders.
+## Payment Integration:🤑
+- Integration with a payment gateway (Stripe) for checkout and payment processing.
+- Handling webhook events for successful order completion.
+## Admin Panel:💹
+- Access to an administrative dashboard with privileges to manage users, products, and orders.
+- CRUD operations for users and products.
+- Order status management and updates.
+## Search and Filtering:🔍
+- Ability to search for products based on keywords or categories.
+- Filters for refining search results (e.g., price range, product attributes).
+## Reporting and Analytics:📊
+- Generating sales reports and analytics.
+- Visualizing sales data with charts and graphs.
+## Email Notifications:📧
+- Sending transactional emails for password resets.
+- Integrating with SMTP email services.
+## Error Handling and Logging:⚠️
+- Handling and logging errors gracefully.
+- Providing meaningful error messages to users.
+
+#
+
+## :rocket: Technologies Used ##
+
+<div align="center">
+  <a href="https://react.dev/">
+    <img width="50" title="React.Js" alt="React.js Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png">
+  </a> &#xa0; &#xa0;
+
+  <a href="https://nodejs.org/en">
+    <img width="50" title="Node.Js" alt="Node.js Logo" src="https://cdn-clekk.nitrocdn.com/tkvYXMZryjYrSVhxKeFTeXElceKUYHeV/assets/images/optimized/rev-49e2c5e/litslink.com/wp-content/uploads/2020/12/node.js-logo-image.png">
+  </a> &#xa0; &#xa0;
+
+  <a href="https://www.mongodb.com/">
+    <img width="50" title="MongoDB" alt="MongoDB Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png">
+  </a> &#xa0; &#xa0;
+
+  <a href="https://stripe.com/in">
+    <img width="50" title="Stripe" alt="Stripe Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/1200px-Stripe_Logo%2C_revised_2016.svg.png">
+  </a> &#xa0; &#xa0;
+  
+  <a href="#">
+    <img width="50" title="Javascript" alt="Javascript Logo" src="https://banner2.cleanpng.com/20180422/hrq/kisspng-javascript-web-development-logo-script-clipart-5adc4c1a932f97.7568863815243868426029.jpg">
+  </a> &#xa0; &#xa0;
+</div>
+
+**Server:** Node, Express
+
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at saquelain1502@gmail.com
+
