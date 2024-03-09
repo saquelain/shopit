@@ -3,7 +3,7 @@
 A FullStack MERN E-commerce web application that offers a seamless shopping experience with features such as user authentication, product browsing, cart management, order processing, and payment integration. Leveraging modern web development practices using Redux-Toolkit, our application provides an intuitive user interface while ensuring robust backend functionality for secure data management. With a focus on scalability and maintainability, our project showcases the integration of frontend and backend technologies to deliver a comprehensive e-commerce solution.
 
 ## Live Demo🗺️
-https://puce-alive-bream.cyclic.app/
+https://shopit-ys5l.onrender.com
 
 #
 
